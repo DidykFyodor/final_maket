@@ -7,3 +7,4 @@ burger.onclick = function () {
   header.classList.toggle("menu-open");
 };
 
+// text-slider
