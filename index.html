@@ -6,20 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Reset&Normalize/normalize.css">
-    <link rel="stylesheet" href="Reset&Normalize/reset.css">
-    <link rel="stylesheet" href="styles/fonts.css">
-
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
     <div class="wrapper">
-        <nav class="nav">
-            <div class="nav__page-first">
+            <div class="nav__page-inner">
                 <header class="header" id="header">
                     <div class="header__container container">
-                        <div class="header__nav">
                             <div class="header__contact">
                                 <ul class="header__language">
                                     <li class="language__item"><a href="#" class="language__link">Ук</a></li>
@@ -30,7 +23,6 @@
                                 <a href="tel:0800 211 927" class="header__tel">0800 211 927</a>
                                 <a href="#" class="header__facebook"><span class="icon-Facebook"></span></a>
                             </div>
-                            <div class="header__buttons">
                                 <a href="#" class="header__logo"><svg width="130" height="60" viewBox="0 0 130 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_101025_2680)">
                                     <g filter="url(#filter0_d_101025_2680)">
@@ -70,33 +62,29 @@
                                 </svg>
                                 </a>
                                 <a href="#" class="header__services">services</a>
-                                <button class="header__burger" id="header__burger">
-                                    <span class="burger__item"></span>
-                                </button>
-                            </div>
+                            <button class="header__burger" id="header__burger">
+                                <span class="header__burger-item"></span>
+                            </button>
                             <ul class="header__navigation">
-                                <li class="navigation__item">
+                                <li class="header__navigation-item">
                                     <a href="#" class="navigation__link">about us</a>
                                 </li>
-                                <li class="navigation__item">
+                                <li class="header__navigation-item">
                                     <a href="#" class="navigation__link">services</a>
                                 </li>
-                                <li class="navigation__item">
+                                <li class="header__navigation-item">
                                     <a href="#" class="navigation__link">team</a>
                                 </li>
-                                <li class="navigation__item">
+                                <li class="header__navigation-item">
                                     <a href="#" class="navigation__link">publications</a>
                                 </li>
-                                <li class="navigation__item">
+                                <li class="header__navigation-item">
                                     <a href="#" class="navigation__link">contact</a>
                                 </li>
-                            </ul>
-                            
-                        </div>
+                            </ul>    
                     </div>
                 </header>
             </div>
-        </nav>
     </div>
     <script src="js/scripts.js"></script>
 </body>

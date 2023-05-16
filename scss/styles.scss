@@ -1,0 +1,24 @@
+
+@use 'header';
+@use 'media';
+@use 'reset';
+@use 'fonts';
+@use 'mixin';
+body,html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: 'Montserrat';
+    background-color: antiquewhite;
+    line-height: 1.25;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
