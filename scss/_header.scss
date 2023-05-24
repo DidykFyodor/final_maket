@@ -143,7 +143,9 @@
 			display: none;
 		}
 		input:checked + label { 
-			color: #EF8080; 
+			background-image: linear-gradient(180deg, #EF8080, #F0145A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);; 
 		} 
 		#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4 { 
 			display: block; 
@@ -174,9 +176,13 @@
 		align-items: end;
 		
 	}
-
-	&__content {
+	&__contents{
+		display: flex;
+		align-items: center;
 		flex: 0 1 63%;
+	}
+	&__content {
+		
 		padding-left: 60px;
 		text-align: start;
 		align-self: center;
@@ -212,7 +218,9 @@
 
 	&__page-title {
 		font-weight: 700;
-		color:#F0145A ;
+		background-image: linear-gradient(180deg, #EF8080, #F0145A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);
 		font-size: 38px;
 		margin-bottom: 60px;
 	}

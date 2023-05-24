@@ -10,6 +10,7 @@
     
 </head>
 <body>
+    <div class="invisible" id="close-popup"></div>
     <div class="wrapper">
         <div class="specification">
             <article class="nav__page-inner">
@@ -101,7 +102,7 @@
                         <input class="page-client__input" id="tab4" type="radio" name="tabs">
                         <label class="page-client__label" for="tab4">Business oriented</label>
                     </div>
-                    <page-client__contents>
+                    <div class="page-client__contents">
                         <div class="page-client__content"
                         id="content1">
                             <h3 class="page-client__title">We turn the idea of legal services</h3>
@@ -122,7 +123,7 @@
                             <h3 class="page-client__title">Esse mollitia voluptatum rem nostrum vero quos atque tempore placeat?</h3>
                             <p class="page-client__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quae libero minus laudantium delectus, possimus cumque molestias fuga nam obcaecati sit esse, nesciunt quibusdam et!</p>
                         </div>
-                    </page-client__contents>
+                    </div class="page-client__contents">
                 </div>
             </article>
             <article class="nav__page-help">
@@ -235,17 +236,17 @@
                     <a href="#" id="publications" class="publications__link">Publications></a>
                     <h2 class="publications__title">We have something to tell</h2>
                     <div class="publications__table">
-                        <div class="publications__item">
+                        <a href="#" class="publications__item">
                             <div class="publications__image">
                                 <img src="images/first_new.png" alt="">
                             </div>
                             <div class="publications__context">
                                 <h3 class="publications__subtitle">Equity associate</h3>
-                                <span class="publications__date"></span>
+                                <span class="publications__date">April 22</span>
                                 <p class="publications__text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
                             </div>
-                        </div>
-                        <div class="publications__item">
+                        </a>
+                        <a href="#" class="publications__item">
                             <div class="publications__image">
                                 <img src="images/second_new.png" alt="">
                             </div>
@@ -254,8 +255,8 @@
                                 <span class="publications__date">September 29</span>
                                 <p class="publications__text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
                             </div>
-                        </div>
-                        <div class="publications__item">
+                        </a>
+                        <a href="#" class="publications__item">
                             <div class="publications__image">
                                 <img class="third-img" src="images/third_new.png" alt="">
                             </div>
@@ -264,7 +265,7 @@
                                 <span class="publications__date">August 19</span>
                                 <p class="publications__text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </article>
@@ -282,11 +283,35 @@
                         </a>
                     </li>
                     <li class="footer__tel"><a href="tel:0800 211 927" class="tel__link">0800 211 927</a></li>
-                    <li class="footer__mail"><a href="#" class="mail__link">contact@forstudy.space</a></li>
+                    <li class="footer__mail"><a href="#popup" class="mail__link">contact@forstudy.space</a></li>
                 </ul>
                 <span  class="footer__copyright">&#169; 2021 HLEGAL Law company, LLC</span>
             </div>
         </footer>
+    </div>
+    <div class="popup">
+        <div class="popup__wrapper" id="popup">
+            <div class="popup__container">
+                <a href="#close-popup" class="popup__close">&#x2716;</a>
+                <h2 class="popup__title">We would like to help you</h2>
+                <form action="" id="form" autocomplete="on" class="popup">
+                    <div class="popup__contact">
+                        <label for="name"></label>
+                        <input class="field" type="text" id="name" placeholder="Name">
+                        <label for="massage"></label>
+                        <textarea class="field" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <div class="popup__answer">
+                        <h3 class="popup__answer-title">How to answer you?</h3>
+                        <label for="number"></label>
+                        <input class="field" type="tel" id="number" placeholder="Phone number">
+                        <label for="email"></label>
+                        <input class="field" type="email" id="email" placeholder="Email">
+                    </div>
+                    <button class="popup__send" form="form" type="submit" >Send message</button>
+                </form>
+            </div>
+        </div>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/slick.js"></script>
