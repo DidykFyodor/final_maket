@@ -1,6 +1,8 @@
 .nav__page-inner{
+	position: relative;
 	height: 100vh;
 	background:url(../images/Symbol.png) center top/100vh no-repeat;
+	margin-bottom: 60px;
 }
 .header {
 	padding-top: 50px;
@@ -134,66 +136,154 @@
 
 // --------------------------------------------------------------------
 // --------------------------------------------------------------------
-.nav {
 
-	&__page-client {
-		padding: 60px 0;
-	}
+.nav__page-client {
+		margin-bottom: 60px;
+		input{
+			display: none;
+		}
+		input:checked + label { 
+			color: #EF8080; 
+		} 
+		#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4 { 
+			display: block; 
+		} 
+		label{
+			text-align: end;
+			font-weight: 700;
+			font-size: 38px;
+			color: #B3B3BA;
+			transition: color 0.4s ease;
+			cursor: pointer;
+			&:hover{
+				color: #F0145A;
+			}
+		}
 }
 .page-client {
-
+	
 	&__container {
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		max-width: 1080px;
-		margin: 0 auto;
-		height: min-content;
-		overflow: hidden;
 	}
 
-	&__list-spec {
+	&__tabs {
+		padding-right: 60px;
+		border-right: 4px solid rgba(255, 255, 255, 0.3);
 		display: flex;
 		flex-direction: column;
-		font-size: 38px;
-		font-weight: 700;
-		color: #B3B3BA;
-		border-right: 2px solid rgba(255, 255, 255, 0.5);
-		padding-right: 60px;
-		flex: 1 0 435px;
+		align-items: end;
+		
 	}
 
-	&__item-spec {
-		text-align: end;
+	&__content {
+		flex: 0 1 63%;
+		padding-left: 60px;
+		text-align: start;
+		align-self: center;
+		&:not(:first-child){
+			display:none
+		}
 	}
-	&__item-spec:not(:last-child) {
-		margin-bottom: 30px;
-	}
-
-	&__list-explanation {
-		border-left: 2px solid rgba(255, 255, 255, 0.5);
-		color: red;
-		padding-left: 63px;
-		height: 100%;
-	}
-
-	&__item-explanation {
-		color: #fff;
-		margin: 43px 0;
-	}
-}
-.container {
-}
-.item-explanation {
+	
 
 	&__title {
 		font-size: 30px;
 		font-weight: 700;
+		color: #fff;
 		margin-bottom: 30px;
 	}
 
 	&__text {
+		color: #fff;
 		font-size: 19px;
 		font-weight: 400;
+		line-height: 1.6;
 	}
 }
+
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+.nav {
+
+	&__page-help {
+	}
+}
+.page-help {
+
+	&__page-title {
+		font-weight: 700;
+		color:#F0145A ;
+		font-size: 38px;
+		margin-bottom: 60px;
+	}
+	
+
+	&__items {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 60px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+
+	&__icon{
+		width: 92px;
+		height: 92px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 24px;
+		background-color: #fff;
+		margin-bottom: 30px;
+	}
+
+	&__title{
+		color: #24A3FF;
+		font-weight: 700;
+		font-size: 22px;
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		color: #FFFFFF;
+		font-size: 16px;
+	}
+}
+
+.icon-Court,.icon-Protection,.icon-Trust,.icon-Coprorate,.icon-Support,.path3,.path2,.path1,.icon-Ecommerce{
+	font-size: 64px;
+	background-image: linear-gradient(180deg, #EF8080, #F0145A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+// ---------------------------------------------------------
+.specification {
+    background:  linear-gradient(45deg, rgb(50, 50, 100) 100%, rgb(50, 50, 100) 100%, rgb(100, 62, 114) 100%);
+    background: -webkit-linear-gradient(45deg, rgb(50, 50, 100) 100%, rgb(50, 50, 100) 100%, rgb(100, 62, 114) 100%);
+    background: -moz-linear-gradient(45deg, rgb(50, 50, 100) 100%, rgb(50, 50, 100) 100%, rgb(100, 62, 114) 100%);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+	margin-bottom: 60px;
+	padding-bottom: 60px;
+	position: relative;
+
+    &::after{
+        position: absolute;
+        display: block;
+        height: 10px;
+        width: 100%;
+        bottom: -10px;
+        left: 0;
+        border-bottom: 10px solid #CACADB;
+    }
+}
+
+

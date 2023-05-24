@@ -1,0 +1,1 @@
+@use 'header';@use 'main';@use 'footer';@use 'media';@use 'reset';@use 'slick';@use 'slick-theme';@use 'fonts';@use 'mixin';body,html{height:100%;width:100%}body{font-family:Montserrat;line-height:1.25}.container{max-width:1320px;margin:0 auto;overflow:hidden}.container:not(:last-child){margin-bottom:60px}a{text-decoration:none;color:#fff}

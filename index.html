@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.min.css">
+    
 </head>
 <body>
     <div class="wrapper">
@@ -74,10 +75,10 @@
                                         <a href="#" class="navigation__link">services</a>
                                     </li>
                                     <li class="header__navigation-item">
-                                        <a href="#" class="navigation__link">team</a>
+                                        <a href="#team" class="navigation__link">team</a>
                                     </li>
                                     <li class="header__navigation-item">
-                                        <a href="#" class="navigation__link">publications</a>
+                                        <a href="#publications" class="navigation__link">publications</a>
                                     </li>
                                     <li class="header__navigation-item">
                                         <a href="#" class="navigation__link">contact</a>
@@ -89,44 +90,206 @@
                 <a href="#next"class="page-inner__scroll-button"></a>
             </article>
             <article class="nav__page-client" id="next">
-                <div class="page-client__container container">
-                    <ul class="page-client__list-spec">
-                        <li class="page-client__item-spec"><a href="" class="page">Consistent</a></li>
-                        <li class="page-client__item-spec"><a href="" class="page">Customer oriented</a></li>
-                        <li class="page-client__item-spec"><a href="" class="page">Innovative</a></li>
-                        <li class="page-client__item-spec"><a href="" class="page">Business oriented</a></li>
-                    </ul>
-                    <ul class="page-client__list-explanation">
-                        <li class="page-client__item-explanation">
-                            <h3 class="item-explanation__title">We turn the idea of legal services</h3>
-                            <p class="item-explanation__text">
-                                Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.
-                            </p>
-                        </li>
-                        <li class="page-client__item-explanation"
-                        >
-                            <h3 class="item-explanation__title">We turn the idea of legal services</h3>
-                            <p class="item-explanation__text">
-                                Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.
-                            </p>
-                        </li>
-                        <li class="page-client__item-explanation">
-                            <h3 class="item-explanation__title">We turn the idea of legal services</h3>
-                            <p class="item-explanation__text">
-                                Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.
-                            </p>
-                        </li>
-                        <li class="page-client__item-explanation">
-                            <h3 class="item-explanation__title">We turn the idea of legal services</h3>
-                            <p class="item-explanation__text">
-                                Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.
-                            </p>
-                        </li>
-                    </ul>
+                <div class="page-client__container container" id="container">
+                    <div class="page-client__tabs">
+                        <input class="page-client__input" id="tab1" type="radio" name="tabs" checked>
+                        <label class="page-client__label" for="tab1">Consistent</label>
+                        <input class="page-client__input" id="tab2" type="radio" name="tabs">
+                        <label class="page-client__label" for="tab2">Customer oriented</label>
+                        <input class="page-client__input" id="tab3" type="radio" name="tabs">
+                        <label class="page-client__label" for="tab3">Innovative</label>
+                        <input class="page-client__input" id="tab4" type="radio" name="tabs">
+                        <label class="page-client__label" for="tab4">Business oriented</label>
+                    </div>
+                    <page-client__contents>
+                        <div class="page-client__content"
+                        id="content1">
+                            <h3 class="page-client__title">We turn the idea of legal services</h3>
+                            <p class="page-client__text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                        </div>
+                        <div class="page-client__content"
+                        id="content2">
+                            <h3 class="page-client__title">Lorem ipsum dolor sit amet consectetur.</h3>
+                            <p class="page-client__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reprehenderit numquam cumque voluptatibus cum consequuntur, porro veniam quidem perspiciatis dolor nulla, beatae repellendus voluptas ad dignissimos aspernatur dolorum asperiores enim.</p>
+                        </div>
+                        <div class="page-client__content"
+                        id="content3">
+                            <h3 class="page-client__title">Architecto nihil pariatur nobis!</h3>
+                            <p class="page-client__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa nam sint sunt, ex atque deleniti at expedita qui repellendus dignissimos?</p>
+                        </div>
+                        <div class="page-client__content"
+                        id="content4">
+                            <h3 class="page-client__title">Esse mollitia voluptatum rem nostrum vero quos atque tempore placeat?</h3>
+                            <p class="page-client__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quae libero minus laudantium delectus, possimus cumque molestias fuga nam obcaecati sit esse, nesciunt quibusdam et!</p>
+                        </div>
+                    </page-client__contents>
+                </div>
+            </article>
+            <article class="nav__page-help">
+                <div class="page-help__container container">
+                    <h3 class="page-help__page-title">
+                        What can we do better than others?
+                    </h3>
+                    <div class="page-help__items">
+                        <div class="page-help__item">
+                            <div class="page-help__icon"><span class="icon-Ecommerce"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></div>
+                            <h4 class="page-help__title">IT and e-commerce</h4>
+                            <p class="page-help__text">An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p></div>
+                            <div class="page-help__item">
+                            <div class="page-help__icon"><span class="icon-Support"></span></div>
+                            <h4 class="page-help__title">Comprehensive daily legal support</h4>
+                            <p class="page-help__text">In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
+                            </div>
+                            <div class="page-help__item">
+                            <div class="page-help__icon"><span class="icon-Coprorate"></span></div>
+                            <h4 class="page-help__title">Structuring corporate relationships</h4>
+                            <p class="page-help__text">Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</p>
+                            </div>
+                            <div class="page-help__item">
+                            <div class="page-help__icon"><span class="icon-Trust"></span></div>
+                            <h4 class="page-help__title">Building contractual relations</h4>
+                            <p class="page-help__text">Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
+                            </div>
+                            <div class="page-help__item">
+                            <div class="page-help__icon"><span class="icon-Protection"></span></div>
+                            <h4 class="page-help__title">Protection of business, intellectual property</h4>
+                            <p class="page-help__text">And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
+                            </div>
+                            <div class="page-help__item">
+                            <div class="page-help__icon"><span class="icon-Court"></span></div>
+                            <h4 class="page-help__title">Judicial representation</h4>
+                            <p class="page-help__text">Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?.</p>
+                            </div>
+                    </div>
                 </div>
             </article>
         </div>
+        <main class="main">
+            <article class="main__slider-parthner container">
+                <div class="carousel">
+                    <div class="slider-parthner__block ">
+                        <div class="slider-parthner__image">
+                            <img src="images/image_of_slider.png" alt="">
+                        </div>
+                        <div class="slider-parthner__content">
+                            <a href="#" id="team" class="slider-parthner__link">Команда></a>
+                            <h3 class="slider-parthner__title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h3>
+                            <span class="slider-parthner__name">Олександр Олександровський</span>
+                            <span class="slider-parthner__prof">Керуючий партнер</span>
+                        </div>
+                    </div>
+                    <div class="slider-parthner__block ">
+                        <div class="slider-parthner__image">
+                            <img src="images/image_of_slider.png" alt="">
+                        </div>
+                        <div class="slider-parthner__content">
+                            <a href="#" class="slider-parthner__link">Команда></a>
+                            <h3 class="slider-parthner__title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h3>
+                            <span class="slider-parthner__name">Олександр Олександровський</span>
+                            <span class="slider-parthner__prof">Керуючий партнер</span>
+                        </div>
+                    </div>
+                    <div class="slider-parthner__block ">
+                        <div class="slider-parthner__image">
+                            <img src="images/image_of_slider.png" alt="">
+                        </div>
+                        <div class="slider-parthner__content">
+                            <a href="#" class="slider-parthner__link">Команда></a>
+                            <h3 class="slider-parthner__title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h3>
+                            <span class="slider-parthner__name">Олександр Олександровський</span>
+                            <span class="slider-parthner__prof">Керуючий партнер</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__grid-parthner container">
+                <h2 class="grid-parthner__title">They already trust us</h2>
+                <div class="grid-parthner__wrapper">
+                    <div class="grid-parthner__item"><span class="icon-hillel"></span></div>
+
+                    <div class="grid-parthner__item"><span class="icon-wannabiz"></span></div>
+
+                    <div class="grid-parthner__item"><span class="icon-tapgerine"></span></div>
+
+                    <div class="grid-parthner__item"><span class="icon-dlook"></span></div>
+
+                    <div class="grid-parthner__item"><span class="icon-orangear"></span></div>
+
+                    <div class="grid-parthner__item"><span class="icon-adtelligent"></span></div>
+
+                    <div class="grid-parthner__item"><span class="icon-clickky"></span></div>
+
+                    <div class="grid-parthner__item"><span class="icon-eco-leasing"></span></div>
+
+                    <div class="grid-parthner__item"><span class="icon-ingratek"></span></div>
+
+                    <div class="grid-parthner__item"><span class="icon-city-par"></span></div>
+                    
+                    <div class="grid-parthner__item"><span class="icon-artprint"></span></div>
+
+                    <div class="grid-parthner__item"><span class="icon-ultimatecard"></span></div>
+                </div>
+            </article>
+            <article class="main__publications">
+                <div class="publications__container container">
+                    <a href="#" id="publications" class="publications__link">Publications></a>
+                    <h2 class="publications__title">We have something to tell</h2>
+                    <div class="publications__table">
+                        <div class="publications__item">
+                            <div class="publications__image">
+                                <img src="images/first_new.png" alt="">
+                            </div>
+                            <div class="publications__context">
+                                <h3 class="publications__subtitle">Equity associate</h3>
+                                <span class="publications__date"></span>
+                                <p class="publications__text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                            </div>
+                        </div>
+                        <div class="publications__item">
+                            <div class="publications__image">
+                                <img src="images/second_new.png" alt="">
+                            </div>
+                            <div class="publications__context">
+                                <h3 class="publications__subtitle">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h3>
+                                <span class="publications__date">September 29</span>
+                                <p class="publications__text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                            </div>
+                        </div>
+                        <div class="publications__item">
+                            <div class="publications__image">
+                                <img class="third-img" src="images/third_new.png" alt="">
+                            </div>
+                            <div class="publications__context">
+                                <h3 class="publications__subtitle">Millennial Testament</h3>
+                                <span class="publications__date">August 19</span>
+                                <p class="publications__text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                    <div class="footer__adress">
+                        <span class="footer__street">Kyiv, Mechnikova str, 14/1</span>
+                        <a href="https://goo.gl/maps/eJpRb8dSd3wtakU7A" class="footer__map">on map</a>
+                    </div>
+                
+                <ul class="footer__contacts">
+                    <li class="footer__facebook">
+                        <a href="#" class="facebook__link"><span class="icon-Facebook-Footer"></span>
+                        </a>
+                    </li>
+                    <li class="footer__tel"><a href="tel:0800 211 927" class="tel__link">0800 211 927</a></li>
+                    <li class="footer__mail"><a href="#" class="mail__link">contact@forstudy.space</a></li>
+                </ul>
+                <span  class="footer__copyright">&#169; 2021 HLEGAL Law company, LLC</span>
+            </div>
+        </footer>
     </div>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
