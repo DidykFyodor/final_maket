@@ -1,13 +1,16 @@
-@use 'header';
-@use 'media';
-@use 'main';
-@use 'footer';
-@use 'popup';
-@use 'reset';
-@use 'slick';
-@use 'slick-theme';
-@use 'fonts';
-@use 'mixin';
+
+@use '../../scss/header';
+@use 'header-service';
+
+@use '../../scss/media';
+@use 'media-service';
+@use 'main-service';
+@use '../../scss/main';
+@use '../../scss/footer';
+@use '../../scss/popup';
+@use 'fonts-service';
+@use '../../scss/reset';
+
 
 body,html{
     height: 100%;
@@ -29,8 +32,6 @@ body{
         margin-bottom: 60px;
     }
 }
-
-
 a{
     text-decoration: none;
     color: #fff;
@@ -40,4 +41,5 @@ a{
         background: -webkit-linear-gradient(45deg, rgb(50, 50, 100) 100%, rgb(50, 50, 100) 100%, rgb(100, 62, 114) 100%);
         background: -moz-linear-gradient(45deg, rgb(50, 50, 100) 100%, rgb(50, 50, 100) 100%, rgb(100, 62, 114) 100%);
     }
+
 
