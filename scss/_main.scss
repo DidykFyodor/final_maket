@@ -117,7 +117,16 @@
     &__wrapper {
         display: grid;
     }
+    &__title{
+        font-weight: 700;
+        font-size: 38px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#EF8080), to(#F0145A));
+        background-image: linear-gradient(180deg, #EF8080, #F0145A);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(0,0,0,0);
+        margin-bottom: 30px;
 
+    }
     &__item {
         display: flex;
         align-items: center;
