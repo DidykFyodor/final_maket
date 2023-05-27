@@ -106,11 +106,23 @@
             margin-bottom: 30px;
         }
     }
+    .grid-parthner {
+    
+        &__wrapper {
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
 }
 @media screen and (max-width:415px) {
     .container{
         max-width: 345px;
         padding: 0 20px;
+    }
+    .grid-parthner {
+    
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
     }
     .header{
         &__container{
@@ -253,6 +265,10 @@
         &::after{
             display: none;
         }
+    }
+    &__copyright{
+        display: block;
+        text-align: center;
     }
 }
 }
