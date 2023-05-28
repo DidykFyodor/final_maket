@@ -113,9 +113,9 @@
         }
     }
 }
-@media screen and (max-width:415px) {
+@media screen and (max-width:455px) {
     .container{
-        max-width: 345px;
+        max-width: 415px;
         padding: 0 20px;
     }
     .grid-parthner {
@@ -289,7 +289,7 @@
     }
 }
 }
-@media screen and (min-width:415px){
+@media screen and (min-width:455px){
     .footer{
         &__container{
             display: grid;
@@ -342,6 +342,10 @@
         }
     }
 }
+.nav-block{
+    grid-row: 3/3;
+    grid-column: 1/4;
+}
 .menu-open .header{
         &__container{
             grid-template-rows: minmax(45px,45px) 1fr minmax(1fr,max-content);
@@ -361,8 +365,7 @@ background: linear-gradient(45deg, rgb(67, 48, 45) 7%, rgb(133, 3, 3), rgb(161, 
             animation-iteration-count: 1;
             animation-direction: normal;
             overflow: hidden;
-            grid-row: 3/3;
-            grid-column: 1/4;
+            
         }
         @keyframes dropdown{
             0%{
